@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/Asus/Downloads/glasstron.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasstron</title>
+  <script src="./.2_files/saved_resource"></script>
+  <link rel="stylesheet" href="./.2_files/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    /* Mobile menu animation */
+    #mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    #mobile-menu.show {
+      max-height: 500px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 239, 229, 0.8) 100%);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    }
+
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-8{bottom:-2rem}.-left-8{left:-2rem}.-right-8{right:-2rem}.-top-8{top:-2rem}.-z-10{z-index:-10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-10{margin-left:2.5rem}.ml-2{margin-left:0.5rem}.mr-2{margin-right:0.5rem}.mr-4{margin-right:1rem}.mt-12{margin-top:3rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mb-12{margin-bottom:3rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-20{height:5rem}.h-32{height:8rem}.h-40{height:10rem}.h-48{height:12rem}.h-64{height:16rem}.h-80{height:20rem}.h-96{height:24rem}.h-full{height:100%}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-32{width:8rem}.w-48{width:12rem}.w-full{width:100%}.w-max{width:max-content}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.flex-shrink-0{flex-shrink:0}.-rotate-1{--tw-rotate:-1deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-3{--tw-rotate:3deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-\[\#ff7f00\]{--tw-border-opacity:1;border-color:rgb(255 127 0 / var(--tw-border-opacity, 1))}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.bg-\[\#ff7f00\]{--tw-bg-opacity:1;background-color:rgb(255 127 0 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-black\/60{--tw-gradient-from:rgb(0 0 0 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-black\/70{--tw-gradient-to:rgb(0 0 0 / 0.7) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pt-16{padding-top:4rem}.pt-2{padding-top:0.5rem}.pt-20{padding-top:5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-tight{line-height:1.25}.text-\[\#ff7f00\]{--tw-text-opacity:1;color:rgb(255 127 0 / var(--tw-text-opacity, 1))}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-blue-50{--tw-text-opacity:1;color:rgb(239 246 255 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-orange-300{--tw-text-opacity:1;color:rgb(253 186 116 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.hover\:bg-\[\#e67300\]:hover{--tw-bg-opacity:1;background-color:rgb(230 115 0 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-200:hover{--tw-bg-opacity:1;background-color:rgb(254 215 170 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-50:hover{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.hover\:text-gray-800:hover{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:translate-x-1{--tw-translate-x:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-\[\#ff7f00\]{--tw-text-opacity:1;color:rgb(255 127 0 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:px-3{padding-left:0.75rem;padding-right:0.75rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:block{display:block}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-2xl font-bold text-[#ff7f00] flex items-center">
+              <img src="https://scontent.fmnl9-6.fna.fbcdn.net/v/t39.30808-6/213829436_2947833835431771_1178920475518617872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=R4n5Mkridx4Q7kNvwEy5wd6&_nc_oc=AdmsfjmykQMaYtmicTWwUJCY3Oh_E5gSdxO4FnGKScA5TEcryVoM3-jAFqpS8_iTHGw&_nc_zt=23&_nc_ht=scontent.fmnl9-6.fna&_nc_gid=hWBXxe6XjA7NNqIll99sIw&oh=00_AfPGNuvqK7FwTAA6ZfSAUX4kyCDET4Rdk6-aPfsbbky1_w&oe=6856F4FB" style="width:60px;height:40px"> Glasstron
+            </a>
+          </div>
+          <div class="hidden md:block ml-10">
+            <div class="flex space-x-8">
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#home" class="text-gray-800 hover:text-#ff7f00-600 transition">Home</a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#services" class="text-gray-800 hover:text-#ff7f00-600 transition">Services</a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#products" class="text-gray-800 hover:text-#ff7f00-600 transition">Products</a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#projects" class="text-gray-800 hover:text-#ff7f00-600 transition">Projects</a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#contact" class="text-gray-800 hover:text-#ff7f00-600 transition">Contact us</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="bg-[#ff7f00] hover:bg-[#e67300] text-white px-4 py-2 rounded-md font-medium transition" style="transition: transform 0.2s;">Get a Quote</a>
+        </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-800 focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-4">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#home" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Home</a>
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#services" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Services</a>
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#products" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Products</a>
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#projects" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Projects</a>
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#contact" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Contact</a>
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="block px-3 py-2 bg-blue-600 text-white rounded-md font-medium text-center">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 hero-gradient min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight mb-6">
+            Transforming Spaces with <span class="text-[#ff7f00]">Glasstron</span> glass Solutions
+          </h1>
+          <p class="text-lg text-gray-600 mb-8">
+            Glasstron brings over 14 years of expertise in high-quality glass fabrication and installation for residential, commercial, and architectural projects.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="bg-[#ff7f00] hover:bg-[#e67300] text-white px-6 py-3 rounded-md font-medium transition">Get a Free Quote</a>
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#services" class="border-2 border-[#ff7f00] text-[#ff7f00] hover:bg-orange-50 px-6 py-3 rounded-md font-medium transition" style="transition: transform 0.2s;">Our Services</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="glass-card p-6 rounded-xl shadow-xl transform rotate-3">
+            <img src="file:///C:/Users/Asus/Downloads/gl" alt="Modern glass architecture" class="rounded-lg shadow-md transform -rotate-1">
+          </div>
+          <div class="absolute -bottom-8 -left-8 w-48 h-48 bg-blue-500/10 rounded-full -z-10"></div>
+          <div class="absolute -top-8 -right-8 w-32 h-32 bg-blue-500/20 rounded-full -z-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-[#ff7f00]">Premium</span> Services</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We offer a comprehensive range of glass solutions tailored to meet your specific needs and enhance your living or working spaces.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Commercial -->
+        <div class="glass-card p-8 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="text-[#ff7f00] mb-6 text-4xl">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 group-hover:text-orange-600 transition">Commercial services</h3>
+          <p class="text-gray-600 mb-4">
+            High-quality glass solutions for office buildings, retail stores, and commercial complexes.
+          </p>
+          <button onclick="openServiceModal(&#39;Commercial glass&#39;)" class="flex items-center text-[#ff7f00] font-medium">
+            <span>Learn more</span>
+            <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+          </button>
+        </div>
+
+        <!-- Residential -->
+        <div class="glass-card p-8 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden rounded-lg mb-6 h-40">
+            <img src="./.2_files/photo-1600585154340-be6161a56a0c" alt="Residential glass solutions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="text-[#ff7f00] mb-4 text-4xl">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 group-hover:text-[#ff7f00] transition">Residential services</h3>
+          <p class="text-gray-600 mb-4">
+            Custom glass solutions for homes including windows, doors, shower enclosures, and mirrors.
+          </p>
+          <button onclick="openServiceModal(&#39;Residential services&#39;)" class="flex items-center text-[#ff7f00] font-medium">
+            <span>Learn more</span>
+            <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+          </button>
+        </div>
+
+        <!-- Interior Services -->
+        <div class="glass-card p-8 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="text-[#ff7f00] mb-6 text-4xl">
+            <i class="fas fa-door-open"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 group-hover:text-orange-600 transition">Interior</h3>
+          <p class="text-gray-600 mb-4">
+            Innovative structural glass solutions for interior elements such as partitions and splash boards. 
+          </p>
+          <button onclick="openServiceModal(&#39;Interior&#39;)" class="flex items-center text-orange-600 font-medium">
+            <span>Learn more</span>
+            <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+          </button>
+        </div>
+          </div>
+        </div>
+      
+    
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-[#ff7f00]">Glass</span> Products</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Explore our premium range of glass products designed to elevate both aesthetics and functionality.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Product 1 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1556740734-4c0011796889" alt="Tempered Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Tempered Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">Safety glass processed to be stronger and break into small rounded pieces for reduced injury risk.</p>
+            <button onclick="openProductModal(&#39;Tempered Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1622372738946-62e02505feb3" alt="Laminated Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Laminated Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">Safety glass with interlayer that holds glass together when broken, reducing injury risk and security threats.</p>
+            <button onclick="openProductModal(&#39;Laminated Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1614624532983-4fe9ff7505fc" alt="Insulated Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Insulated Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">Energy-efficient double or triple glazing with air or gas between panes to improve thermal performance.</p>
+            <button onclick="openProductModal(&#39;Insulated Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1622372738946-62e02505feb3" alt="Decorative Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Decorative Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">Custom textured, frosted, etched, tinted or patterned glass for unique design applications.</p>
+            <button onclick="openProductModal(&#39;Decorative Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1617201788926-1e83fc06f758" alt="Fluted Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Fluted Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">A decorative ribbed or textured glass used texture to a living space whilst diffusing light and adding an element of privacy.</p>
+            <button onclick="openProductModal(&#39;Fluted Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1556740734-4c0011796889(1)" alt="Low-E Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Low-E Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4"> Thin, transparently coated glass designed to improve energy efficiency in buildings.</p>
+            <button onclick="openProductModal(&#39;Low-E Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="glass-card rounded-xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="relative overflow-hidden h-64">
+            <img src="./.2_files/photo-1622372738946-62e02505feb3" alt="Colored Glass" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+              <h3 class="text-xl font-semibold text-white">Colored Glass</h3>
+            </div>
+          </div>
+          <div class="p-6">
+            <p class="text-gray-600 mb-4">Tinted or stained glass, used for artistic and decorative purposes. </p>
+            <button onclick="openProductModal(‘Colored Glass&#39;)" class="text-[#ff7f00] font-medium hover:underline">View Options</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our <span class="text-[#ff7f00]">Featured</span> Projects</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          See how we've transformed spaces with our glass solutions across various industries and applications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="relative rounded-xl overflow-hidden h-80 group">
+          <img src="./.2_files/photo-1550034995-36dc3a48b778" alt="Office glass facade" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex flex-col justify-end p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Corporate Office Complex</h3>
+            <p class="text-gray-300 mb-4">Modern glass facade with energy-efficient glazing</p>
+            <button onclick="openProjectModal(&#39;Corporate Office Complex&#39;)" class="text-white border-2 border-white px-4 py-2 rounded-md w-max hover:bg-white hover:text-gray-800 transition">View Project</button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="relative rounded-xl overflow-hidden h-80 group">
+          <img src="./.2_files/photo-1600585154340-be6161a56a0c" alt="Residential glass home" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex flex-col justify-end p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Luxury Residence</h3>
+            <p class="text-gray-300 mb-4">Floor-to-ceiling windows with smart glass technology</p>
+            <button onclick="openProjectModal(&#39;Luxury Residence&#39;)" class="text-white border-2 border-white px-4 py-2 rounded-md w-max hover:bg-white hover:text-gray-800 transition">View Project</button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="relative rounded-xl overflow-hidden h-80 group">
+          <img src="./.2_files/photo-1610312278520-bcc893a3ff1d" alt="Hotel atrium" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex flex-col justify-end p-6">
+            <h3 class="text-xl font-semibold text-white mb-2">Five-Star Hotel Atrium</h3>
+            <p class="text-gray-300 mb-4">Dramatic structural glass canopy and railings</p>
+            <button onclick="openProjectModal(&#39;Five-Star Hotel Atrium&#39;)" class="text-white border-2 border-white px-4 py-2 rounded-md w-max hover:bg-white hover:text-gray-800 transition">View Project</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-md font-medium transition">View All Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-[#ff7f00] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">What Our <span class="text-white-200">Clients</span> Say</h2>
+        <p class="text-lg text-black-100 max-w-3xl mx-auto">
+          Don't just take our word for it - hear what our satisfied clients have to say about our products and service.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="glass-card p-8 rounded-xl bg-white/10 backdrop-blur-sm">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-2xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-blue-50 mb-6">"PureGlass transformed our office building with their stunning glass facade. The energy efficiency improvements were noticeable immediately, and their team was professional throughout."</p>
+          <div class="flex items-center">
+            <div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Sarah Johnson</h4>
+              <p class="text-orange-300 text-sm">CEO, TechForward Inc.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glass-card p-8 rounded-xl bg-white/10 backdrop-blur-sm">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-2xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-blue-50 mb-6">"The shower enclosures PureGlass installed in our luxury apartments are not only beautiful but also incredibly durable. We've had zero issues in three years of operation."</p>
+          <div class="flex items-center">
+            <div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Michael Chen</h4>
+              <p class="text-orange-300 text-sm">Property Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glass-card p-8 rounded-xl bg-white/10 backdrop-blur-sm">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400 text-2xl mr-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <p class="text-blue-50 mb-6">"From consultation to installation, PureGlass exceeded our expectations. They helped us select the perfect tempered glass railings for our modern home redesign."</p>
+          <div class="flex items-center">
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Emily Rodriguez</h4>
+              <p class="text-orange-300 text-sm">Homeowner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- Quote Section -->
+  <section id="quote" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Ready to <span class="text-[#ff7f00]">Transform</span> Your Space?</h2>
+          <p class="text-lg text-gray-600 mb-8">
+            Get a free, no-obligation quote for your glass project. Our experts will assess your needs and provide tailored recommendations.
+          </p>
+          <div class="flex items-center mb-6">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fas fa-phone-alt text-[#ff7f00]"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Call Us</h4>
+              <p class="text-gray-600">(02) 7799-6430</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-orange-100 p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-[#ff7f00]"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Email Us</h4>
+              <p class="text-gray-600">gtcorp888@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card p-8 rounded-xl shadow-sm">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Request a Quote</h3>
+          <form id="quoteForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="service" class="block text-gray-700 mb-2">Service Needed</label>
+                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option value="" disabled="" selected="">Select a service</option>
+                  <option value="commercial">Commercial Glass</option>
+                  <option value="residential">Residential Glass</option>
+                  <option value="repair">Glass Repair</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-6">
+              <label for="message" class="block text-gray-700 mb-2">Project Details</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit" class="mt-6 w-full bg-[#ff7f00] hover:bg-[#e67300] text-white px-6 py-3 rounded-md font-medium transition">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get in <span class="text-[#ff7f00]">Touch</span></h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Visit our showroom or contact us to discuss your glass project requirements.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="glass-card p-8 rounded-xl shadow-sm h-full">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-6">Contact Information</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="bg-orange-100 p-3 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-[#ff7f00]"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Showroom and Office Address</h4>
+                <p class="text-gray-600">2 Cooper St.<br>San Francisco del Monte<br>Quezon City, Metro Manila</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-orange-100 p-3 rounded-full mr-4">
+                <i class="fas fa-envelope text-[#ff7f00]"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Email Us</h4>
+                <p class="text-gray-600">gtcorp888@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-orange-100 p-3 rounded-full mr-4">
+                <i class="fas fa-phone-alt text-[#ff7f00]"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Call Us</h4>
+                <p class="text-gray-600">Support: (02) 7799-6430</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-orange-100 p-3 rounded-full mr-4">
+                <i class="fas fa-clock text-[#ff7f00]"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Opening Hours</h4>
+                <p class="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 3:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="overflow-hidden rounded-xl shadow-sm h-96">
+            <iframe src="./.2_files/embed.html" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mt-6">
+            <h4 class="text-xl font-semibold text-gray-800 mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/GlassTron/" class="bg-orange-100 text-[#ff7f00] p-3 rounded-full hover:bg-orange-200 transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="bg-orange-100 text-[#ff7f00] p-3 rounded-full hover:bg-orange-200 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="bg-orange-100 text-[#ff7f00] p-3 rounded-full hover:bg-orange-200 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="bg-orange-100 text-[#ff7f00] p-3 rounded-full hover:bg-orange-200 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="bg-orange-100 text-[#ff7f00] p-3 rounded-full hover:bg-orange-200 transition">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently <span class="text-[#ff7f00]">Asked</span> Questions</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          Find answers to common questions about our glass products and services.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="glass-card p-6 rounded-xl border border-gray-200">
+            <button class="faq-toggle w-full flex justify-between items-center text-left">
+              <h3 class="text-lg font-semibold text-gray-800">What types of glass do you offer for residential windows?</h3>
+              <i class="fas fa-chevron-down text-[#ff7f00] transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden mt-4">
+              <p class="text-gray-600">
+                We offer a wide range of residential window glass options including double-pane insulated glass, tempered safety glass, Low-E energy-efficient glass, tinted glass for privacy, and decorative options like frosted or patterned glass. Our experts can help you select the perfect glass for your climate needs, aesthetic preferences, and budget.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="glass-card p-6 rounded-xl border border-gray-200">
+            <button class="faq-toggle w-full flex justify-between items-center text-left">
+              <h3 class="text-lg font-semibold text-gray-800">How long does a typical glass installation take?</h3>
+              <i class="fas fa-chevron-down text-[#ff7f00] transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden mt-4">
+              <p class="text-gray-600">
+                Installation times vary based on project complexity. Simple window replacements typically take 1-2 hours per window. Larger projects like glass facades, shower enclosures, or custom structural elements may take several days. After evaluating your project, we'll provide a detailed timeline so you know exactly what to expect.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="glass-card p-6 rounded-xl border border-gray-200">
+            <button class="faq-toggle w-full flex justify-between items-center text-left">
+              <h3 class="text-lg font-semibold text-gray-800">Do you offer warranties on your glass products?</h3>
+              <i class="fas fa-chevron-down text-[#ff7f00] transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden mt-4">
+              <p class="text-gray-600">
+                Yes, we stand behind the quality of our products and workmanship. Our standard warranty covers manufacturing defects for 10 years on most glass products. However, many of our premium products come with extended warranties up to 20-30 years. We'll provide full warranty details with your project quote.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="glass-card p-6 rounded-xl border border-gray-200">
+            <button class="faq-toggle w-full flex justify-between items-center text-left">
+              <h3 class="text-lg font-semibold text-gray-800">Can you create custom-sized glass pieces?</h3>
+              <i class="fas fa-chevron-down text-[#ff7f00] transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden mt-4">
+              <p class="text-gray-600">
+                Absolutely! As a premium glass fabricator, we specialize in custom glass solutions. Whether you need oversized panels for architectural features, uniquely shaped glass for designer projects, or specialized thickness for structural applications, our state-of-the-art fabrication facility can accommodate nearly any size requirement.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="glass-card p-6 rounded-xl border border-gray-200">
+            <button class="faq-toggle w-full flex justify-between items-center text-left">
+              <h3 class="text-lg font-semibold text-gray-800">What safety certifications do your glass products have?</h3>
+              <i class="fas fa-chevron-down text-[#ff7f00] transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden mt-4">
+              <p class="text-gray-600">
+                All our safety glass products (tempered, laminated, etc.) meet or exceed applicable ANSI, ASTM, and CPSC standards in the U.S. and international ISO standards where relevant. Our factory is ISO 9001 certified, and we can provide documentation of all certifications for any product upon request.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-[#ff7f00] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Bring Your Vision to Life?</h2>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+        Contact us today (Monday - Friday 8AM-5PM, Saturday 8AM-3PM) for expert advice and exceptional glass solutions.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="bg-white hover:bg-gray-100 text-[#ff7f00] px-8 py-3 rounded-md font-medium transition">
+          Get a Free Quote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+
+    <!-- Modal Windows -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+      <div class="glass-card bg-white p-8 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="flex justify-between items-start mb-6">
+          <h3 id="modalTitle" class="text-2xl font-bold text-gray-800"></h3>
+          <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <div id="modalServices" class="text-gray-700">
+          <!-- Content will be inserted here -->
+        </div>
+        <div class="mt-8">
+          <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="bg-[#ff7f00] hover:bg-[#e67300] text-white px-6 py-2 rounded-md mr-4">
+            Get a Quote
+          </a>
+          <button onclick="document.getElementById(&#39;productModal&#39;).classList.add(&#39;hidden&#39;)" class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-md">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="serviceModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+      <div class="glass-card bg-white p-8 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="flex justify-between items-start mb-6">
+          <h3 id="serviceModalTitle" class="text-2xl font-bold text-gray-800"></h3>
+          <button onclick="document.getElementById(&#39;serviceModal&#39;).classList.add(&#39;hidden&#39;)" class="text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <div id="serviceModalContent" class="text-gray-700">
+          <!-- Content will be inserted here -->
+        </div>
+        <div class="mt-8">
+          <button onclick="document.getElementById(&#39;serviceModal&#39;).classList.add(&#39;hidden&#39;)" class="bg-[#ff7f00] hover:bg-[#e67300] text-white px-6 py-2 rounded-md">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+      <div class="glass-card bg-white p-8 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="flex justify-between items-start mb-6">
+          <h3 id="projectModalTitle" class="text-2xl font-bold text-gray-800"></h3>
+          <button onclick="document.getElementById(&#39;projectModal&#39;).classList.add(&#39;hidden&#39;)" class="text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times text-xl"></i>
+          </button>
+        </div>
+        <div id="projectModalContent" class="text-gray-700">
+          <!-- Content will be inserted here -->
+        </div>
+        <div class="mt-8">
+          <a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" onclick="document.getElementById(&#39;projectModal&#39;).classList.add(&#39;hidden&#39;)" class="bg-[#ff7f00] hover:bg-[#e67300] text-white px-6 py-2 rounded-md mr-4">
+            Get a Quote
+          </a>
+          <button onclick="document.getElementById(&#39;projectModal&#39;).classList.add(&#39;hidden&#39;)" class="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-md">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('show');
+        menu.classList.toggle('hidden');
+      });
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      // FAQ Accordion
+      document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector('i');
+          content.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+          button.parentElement.classList.toggle('bg-gray-50');
+        });
+      });
+      // Form submission
+      document.getElementById('quoteForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Get form values
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          service: document.getElementById('service').value,
+          message: document.getElementById('message').value
+        };
+        // Here you would typically send the data to your server
+        console.log('Form submitted:', formData);
+        // Show success message
+        alert('Thank you for your inquiry! We will contact you shortly.');
+        this.reset();
+      });
+      // Modal functionality
+      function openServiceModal(serviceName) {
+        const modal = document.getElementById('serviceModal');
+        document.getElementById('serviceModalTitle').textContent = serviceName;
+        // Customize content based on service
+        let content = '';
+        if(serviceName === 'Commercial services') {
+          content = `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <img src="https://images.unsplash.com/photo-1550034995-36dc3a48b778?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" 
+                             alt="Commercial glass" class="rounded-lg mb-4 w-full">
+                      </div>
+                      <div>
+                        <p class="font-semibold">Our commercial glass services include:</p>
+                        <ul class="list-disc ml-5 mt-2 space-y-2">
+                          <li>Office building glass facades</li>
+                          <li>Retail storefronts and displays</li>
+                          <li>Glass partitions and doors</li>
+                          <li>Custom architectural elements</li>
+                        </ul>
+                      </div>
+                    </div>`;
+        } else if(serviceName === 'Residential services') {
+          content = `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Residential glass" class="rounded-lg mb-4 w-full">
+                      </div>
+                      <div>
+                        <p class="font-semibold">Transform your home with:</p>
+                        <ul class="list-disc ml-5 mt-2 space-y-2">
+                          <li>Window replacements</li>
+                          <li>Shower enclosures</li>
+                          <li>Glass panels</li>
+                          <li>Mirrors and decorative glass</li>
+                        </ul>
+                      </div>
+                    </div>`;
+        } else { // Interior
+          content = `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <img src="https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Interior glass" class="rounded-lg mb-4 w-full">
+                      </div>
+                      <div>
+                        <p class="font-semibold">Enhance your interior with:</p>
+                        <ul class="list-disc ml-5 mt-2 space-y-2">
+                          <li>Glass partitions</li>
+                          <li>Glass stairs and railings</li>
+                          <li>Splash backs and countertops</li>
+                          <li>Custom decorative glass</li>
+                        </ul>
+                      </div>
+                    </div>`;
+        }
+        document.getElementById('serviceModalContent').innerHTML = content;
+        modal.classList.remove('hidden');
+      }
+
+      // Project modal data
+      const projectData = {
+        'Corporate Office Complex': {
+          details: 'Modern glass facade installation with 3,200 sq ft of energy-efficient glazing.',
+          date: 'Completed: March 2023',
+          location: 'Location: Makati CBD',
+          materials: 'Materials: Low-E insulated glass units',
+          image: 'https://images.unsplash.com/photo-1550034995-36dc3a48b778?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80'
+        },
+        'Luxury Residence': {
+          details: 'Floor-to-ceiling windows with smart glass technology for privacy and energy efficiency.',
+          date: 'Completed: January 2023',
+          location: 'Location: Forbes Park',
+          materials: 'Materials: Smart glass panels with UV control',
+          image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        },
+        'Five-Star Hotel Atrium': {
+          details: 'Dramatic structural glass canopy and railings for luxury hotel lobby.',
+          date: 'Completed: November 2022',
+          location: 'Location: BGC, Taguig',
+          materials: 'Materials: Laminated and tempered glass',
+          image: 'https://images.unsplash.com/photo-1610312278520-bcc893a3ff1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        }
+      };
+
+      function openProjectModal(projectName) {
+        const modal = document.getElementById('projectModal');
+        const project = projectData[projectName];
+        
+        document.getElementById('projectModalTitle').textContent = projectName;
+        
+        const content = `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold mb-2">Project Details</h4>
+            <p>${project.details}</p>
+            <ul class="list-disc ml-5 mt-2">
+              <li>${project.date}</li>
+              <li>${project.location}</li>
+              <li>${project.materials}</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Project Preview</h4>
+            <img src="${project.image}" class="rounded-md w-full">
+          </div>
+        </div>`;
+        
+        document.getElementById('projectModalContent').innerHTML = content;
+        modal.classList.remove('hidden');
+      }
+      
+      // Product modal functionality
+      const productOptions = {
+        'Tempered Glass': {
+          services: ['Windows', 'Shower Doors', 'Glass Railings', 'Table Tops'],
+          thickness: ['6mm', '8mm', '10mm', '12mm'],
+          sizes: ['Standard sizes up to 96"x72"']
+        },
+        'Laminated Glass': {
+          services: ['Safety Glass', 'Soundproofing', 'Security Applications'],
+          thickness: ['6.38mm', '8.38mm', '10.38mm'],
+          sizes: ['Custom sizes available']
+        },
+        'Insulated Glass': {
+          services: ['Energy Efficiency', 'Thermal Insulation', 'Noise Reduction'],
+          thickness: ['3/4"', '1"', '1-3/8"'],
+          sizes: ['Various standard sizes']
+        },
+        'Decorative Glass': {
+          services: ['Interior Design', 'Frosted Patterns', 'Etched Glass', 'Custom Artwork'],
+          thickness: ['4mm', '6mm', '8mm'],
+          sizes: ['Custom sizes available']
+        },
+        'Colored Glass': {
+          services: ['Bathroom Mirrors', 'Closet Doors', 'Decorative Walls', 'Retail Displays'],
+          thickness: ['3mm', '4mm', '6mm'],
+          sizes: ['Standard sizes available']
+        },
+        'Fluted Glass': {
+          services: ['Office Partitions', 'Bathroom Windows', 'Shower Enclosures', 'Glass Doors'],
+          thickness: ['5mm', '6mm', '8mm', '10mm'],
+          sizes: ['Custom sizes available']
+        },
+        'Low-E Glass': {
+          services: ['High-Traffic Areas', 'Flooring', 'Safety Barriers', 'Commercial Spaces'],
+          thickness: ['6mm', '8mm', '10mm', '12mm', '15mm'],
+          sizes: ['Large format available']
+        }
+      };
+      // Set up event listeners for all buttons
+      document.querySelectorAll('[class*="glass-card"] button').forEach(button => {
+        if (button.textContent.includes('View Options')) {
+          button.addEventListener('click', function() {
+            const productName = this.closest('[class*="glass-card"]').querySelector('h3').textContent;
+            openProductModal(productName);
+          });
+        }
+      });
+
+      // Set up event listeners for all project buttons
+      document.querySelectorAll('#projects button').forEach(button => {
+        button.addEventListener('click', function() {
+          const projectName = this.closest('div[class*="relative"]').querySelector('h3').textContent;
+          openProjectModal(projectName);
+        });
+      });
+
+      // Product images data
+      const productImages = {
+        'Tempered Glass': 'https://images.unsplash.com/photo-1556740734-4c0011796889?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+        'Laminated Glass': 'https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80',
+        'Insulated Glass': 'https://images.unsplash.com/photo-1614624532983-4fe9ff7505fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80',
+        'Decorative Glass': 'https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80',
+        'Mirrored Glass': 'https://images.unsplash.com/photo-1617201788926-1e83fc06f758?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
+        'Frosted Glass': 'https://images.unsplash.com/photo-1556740734-4c0011796889?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80',
+        'Toughened Glass': 'https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80'
+      };
+
+      function openProductModal(productName) {
+        const modal = document.getElementById('productModal');
+        const product = productOptions[productName] || {
+          thickness: ['Custom options available'],
+          sizes: ['Please inquire']
+        };
+        document.getElementById('modalTitle').textContent = `${productName} Services & Options`;
+        // Populate services with image
+        const servicesList = document.getElementById('modalServices');
+        if (product.services) {
+          servicesList.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <img src="${productImages[productName] || 'https://images.unsplash.com/photo-1517187617764-8644633df9a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'}" 
+                     alt="${productName}" class="rounded-lg mb-4 w-full h-48 object-cover">
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-800">Common Uses</h4>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  ${product.services.map(service => 
+                    `<span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">${service}</span>`
+                  ).join('')}
+                </div>
+                <div class="grid grid-cols-1 gap-4 mt-4">
+                  <div>
+                    <h5 class="font-medium text-gray-700 mb-2">Thickness Options</h5>
+                    <div id="modalThickness" class="space-y-2">
+                      ${product.thickness.map(option =>
+                        `<div class="flex items-center">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>${option}</span>
+                        </div>`
+                      ).join('')}
+                    </div>
+                  </div>
+                  <div>
+                    <h5 class="font-medium text-gray-700 mb-2">Standard Sizes</h5>
+                    <div id="modalSizes" class="space-y-2">
+                      ${product.sizes.map(size =>
+                        `<div class="flex items-center">
+                          <i class="fas fa-ruler-combined text-blue-500 mr-2"></i>
+                          <span>${size}</span>
+                        </div>`
+                      ).join('')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+        modal.classList.remove('hidden');
+      }
+      document.getElementById('closeModal').addEventListener('click', function() {
+        document.getElementById('productModal').classList.add('hidden');
+      });
+      // Close modal when clicking outside content
+      document.getElementById('productModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.add('hidden');
+        }
+      });
+      // Add hover effects to all buttons
+      document.querySelectorAll('button, [href^="#"]').forEach(btn => {
+        btn.addEventListener('mouseenter', () => {
+          btn.style.transform = 'translateY(-2px)';
+          btn.style.transition = 'transform 0.2s ease';
+        });
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+    </script>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- Column 1 -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+            <img src"#"="">Glasstron
+          </h3>
+          <p class="text-gray-400 mb-6">
+            Transforming spaces with premium glass solutions since 2010. Innovation, quality, and customer satisfaction at the core of everything we do.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/GlassTron/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-6">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#contact" class="text-gray-400 hover:text-white transition">Contact us</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#quote" class="text-gray-400 hover:text-white transition">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-6">Services</h3>
+          <ul class="space-y-3">
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">Commercial Glass</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">Residential Glass</a></li>
+            <li><a href="file:///C:/Users/Asus/Downloads/glasstron.html#" class="text-gray-400 hover:text-white transition">Architectural Glass</a></li>
+            <li></li></ul></div></div></div></footer></body></html>
