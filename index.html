@@ -55,7 +55,7 @@
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <a href="#" class="text-2xl font-bold text-[#ff7f00] flex items-center">
-              <img src ="https://scontent.fmnl9-6.fna.fbcdn.net/v/t39.30808-6/213829436_2947833835431771_1178920475518617872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=R4n5Mkridx4Q7kNvwEy5wd6&_nc_oc=AdmsfjmykQMaYtmicTWwUJCY3Oh_E5gSdxO4FnGKScA5TEcryVoM3-jAFqpS8_iTHGw&_nc_zt=23&_nc_ht=scontent.fmnl9-6.fna&_nc_gid=Q2E5f5BMaKkiBT8ET45Mtg&oh=00_AfPMucgwgaSbckl1oxfh3yrDMx0rbKyxAscMZlF107kDWQ&oe=6856F4FB"style="width:60px;height:40px"></i> Glasstron
+              <img src ="https://scontent.fmnl25-1.fna.fbcdn.net/v/t39.30808-6/213829436_2947833835431771_1178920475518617872_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=oOStMrXl4QcQ7kNvwHnaLrl&_nc_oc=Adm-sQEH4EKChV4JnFORl3wk2UU2Pc9_ElQxpulvuNHA265FalBNLDVLN6K4LBIDyZQ&_nc_zt=23&_nc_ht=scontent.fmnl25-1.fna&_nc_gid=vPzyaTRieQOz7O2SAiccwA&oh=00_AfMb33kNQRNqByI4Ynj8_r1frbTZpZYhkL_ztXOKCPnjAA&oe=684F0BFB"style="width:60px;height:40px"></i> Glasstron
             </a>
           </div>
           <div class="hidden md:block ml-10">
@@ -175,6 +175,21 @@
             Innovative structural glass solutions for interior elements such as partitions and splash boards. 
           </p>
           <button onclick="openServiceModal('Interior')" class="flex items-center text-orange-600 font-medium">
+            <span>Learn more</span>
+            <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+          </button>
+        </div>
+
+        <!-- Hospitality Services -->
+        <div class="glass-card p-8 rounded-xl shadow-sm hover:shadow-md transition cursor-pointer group">
+          <div class="text-[#ff7f00] mb-6 text-4xl">
+            <i class="fas fa-hotel"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 group-hover:text-orange-600 transition">Hospitality</h3>
+          <p class="text-gray-600 mb-4">
+            Custom glass solutions for hotels, restaurants, and resorts including glass partitions, railings, and facades.
+          </p>
+          <button onclick="openServiceModal('Hospitality')" class="flex items-center text-orange-600 font-medium">
             <span>Learn more</span>
             <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
           </button>
@@ -824,6 +839,23 @@ $0
                           <li>Shower enclosures</li>
                           <li>Glass panels</li>
                           <li>Mirrors and decorative glass</li>
+                        </ul>
+                      </div>
+                    </div>`;
+        } else if(serviceName === 'Hospitality') {
+          content = `<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Hospitality glass" class="rounded-lg mb-4 w-full">
+                      </div>
+                      <div>
+                        <p class="font-semibold">Hospitality glass solutions include:</p>
+                        <ul class="list-disc ml-5 mt-2 space-y-2">
+                          <li>Hotel glass facades and entrances</li>
+                          <li>Restaurant glass partitions</li>
+                          <li>Resort pool enclosures</li>
+                          <li>Lobby glass features</li>
+                          <li>Custom decorative elements</li>
                         </ul>
                       </div>
                     </div>`;
